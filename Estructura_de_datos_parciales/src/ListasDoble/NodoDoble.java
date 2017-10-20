@@ -1,41 +1,34 @@
 package ListasDoble;
 
 public class NodoDoble {
+
+	private musica valor;
+	private NodoDoble siguiente;
+	private NodoDoble anterior;
 	
-	private String tipo;
-	private	String cancion;
-	private String album;
-	private String autor;
-	private int id;
-	public String getTipo() {
-		return tipo;
+	public NodoDoble(musica val,NodoDoble ant, NodoDoble sig){
+		siguiente=sig;
+		valor=val;
+		anterior=ant;			
 	}
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
+	
+	public musica getValor() {
+		return valor;
 	}
-	public String getCancion() {
-		return cancion;
+	public void setValor(musica valor) {
+		this.valor = valor;
 	}
-	public void setCancion(String cancion) {
-		this.cancion = cancion;
+	public NodoDoble getSiguiente() {
+		return siguiente;
 	}
-	public String getAlbum() {
-		return album;
+	public void setSiguiente(NodoDoble siguiente) {
+		this.siguiente = siguiente;
 	}
-	public void setAlbum(String album) {
-		this.album = album;
+	public NodoDoble getAnterior() {
+		return anterior;
 	}
-	public String getAutor() {
-		return autor;
-	}
-	public void setAutor(String autor) {
-		this.autor = autor;
-	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
+	public void setAnterior(NodoDoble anterior) {
+		this.anterior = anterior;
 	}
 	
 	
